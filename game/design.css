@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family:'Roboto', 'Arial Narrow', Arial, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Game styles */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("game-assets/background-images/party.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    height: 35px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+    padding: 10px;
+    min-width: 300px;
+    width: 50%;
+}
+
+/* Story text container */
+
+main #story {
+    color: white;
+    line-height: 1.5;
+    font-size: x-large;
+    margin-bottom: 20px;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+/* Options container */
+
+main #options {
+    display: flex;
+    flex-direction: column;
+}
+
+main #options button {
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    min-width: 300px;
+    width: 100%;
+    
+}
+
+main #options button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+/* Game animation properties */
+
+html {
+    transition: filter 3s;
+}
+
+.dark {
+    filter: brightness(0);
+}
+
+@media only screen and (max-width: 600px) {
+
+  }
