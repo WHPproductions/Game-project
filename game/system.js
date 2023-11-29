@@ -701,7 +701,7 @@ const textNodes = [
   // Driving branch
   {
     id: 36,
-    text: `This is the demo of the game for now, the story will expanded later on. If you have an idea what else I could add, you can contact me. For now thank you for playing my game`,
+    text: `This is the demo of the game for now, maybe later i will work on on it again if i have the spirit. If you have an idea what else I could add, you can tell me. For now thank you for playing my game`,
     options: [
       {
         text: 'Restart game',
